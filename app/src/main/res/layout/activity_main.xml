@@ -1,142 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kingoj.login_screen.MainActivity">
+    tools:context="com.example.kingoj.login_screen.MainActivity"
+    android:background="@drawable/background_gradient"
+    >
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="150dp"
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_email_black"
         android:contentDescription="@string/code_logo"
-        android:scaleType="center"
-        android:src="@drawable/code" />
+        android:scaleType="center"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView">
-
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="53dp">
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_alignEnd="@+id/editText2"
+            android:layout_alignLeft="@+id/view2"
             android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/editText2"
-            android:layout_marginTop="12dp"
-            android:background="#11000000"
+            android:layout_alignStart="@+id/view2"
+            android:layout_marginTop="47dp"
+            android:background="@android:color/transparent"
             android:drawableLeft="@drawable/ic_action_person"
+            android:drawablePadding="10dp"
             android:drawableStart="@drawable/ic_action_person"
             android:ems="10"
             android:hint="@string/username"
-            android:inputType="textPersonName"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:inputType="number"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
             android:textSize="20sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/editText"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_corner" />
+
 
         <EditText
             android:id="@+id/editText2"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_below="@+id/editText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:background="#11000000"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent"
             android:drawableLeft="@drawable/ic_action_lock"
+            android:drawablePadding="10dp"
             android:drawableStart="@drawable/ic_action_lock"
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
             android:textSize="20sp" />
 
-        <CheckBox
-            android:id="@+id/checkBox2"
-            style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editText2"
-            android:layout_alignStart="@+id/editText2"
-            android:layout_below="@+id/editText2"
-            android:layout_marginTop="20dp"
-            android:checked="false"
-            android:padding="3dp"
-            android:text="@string/remember"
-            android:textAlignment="center"
-            android:textColor="@color/colorBlack"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/editText2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_corner" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/checkBox2"
-            android:layout_alignBottom="@+id/checkBox2"
-            android:layout_alignEnd="@+id/editText2"
-            android:layout_alignRight="@+id/editText2"
-            android:layout_marginTop="20dp"
+            android:layout_alignEnd="@+id/view"
+            android:layout_alignRight="@+id/view"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="22dp"
+            android:clickable="true"
+            android:focusable="true"
             android:onClick="forGotPass"
             android:text="@string/forgot"
             android:textAlignment="center"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorWhite"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/cardView"
+        <Button
+            android:id="@+id/button"
             android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_alignLeft="@+id/checkBox2"
-            android:layout_alignStart="@+id/checkBox2"
-            android:layout_below="@+id/checkBox2"
-            android:layout_marginTop="20dp"
-            app:cardBackgroundColor="@android:color/holo_orange_dark">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/text_view_signin"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:text="@string/Login"
-                    android:textAlignment="center"
-                    android:textColor="@color/cardview_light_background"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/view"
+            android:layout_alignStart="@+id/view"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/round_corner"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/Login"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="15sp" />
 
 
         <TextView
             android:id="@+id/dont_have_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/cardView"
-            android:layout_marginTop="20dp"
+            android:layout_below="@+id/button"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
             android:text="@string/no_account"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorWhite"
             android:textSize="15sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/signUP"
@@ -144,11 +133,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/dont_have_account"
             android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="signUP"
             android:text="@string/Sign_up"
-            android:textColor="@android:color/holo_orange_dark"
+            android:textColor="@color/colorWhite"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:onClick="signUP"/>
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
