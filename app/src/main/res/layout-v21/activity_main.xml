@@ -40,7 +40,8 @@
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             android:textColor="@color/colorWhite"
             android:textColorHint="@color/colorWhite"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
 
         <View
             android:layout_width="300dp"
@@ -56,11 +57,9 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_alignEnd="@+id/textView3"
-            android:layout_alignRight="@+id/textView3"
             android:layout_below="@+id/view2"
             android:layout_marginTop="14dp"
             android:background="@android:color/transparent"
-            android:drawableLeft="@drawable/ic_action_lock"
             android:drawablePadding="10dp"
             android:drawableStart="@drawable/ic_action_lock"
             android:ems="10"
@@ -83,7 +82,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/view"
-            android:layout_alignRight="@+id/view"
             android:layout_below="@+id/view"
             android:layout_marginTop="27dp"
             android:onClick="forGotPass"
@@ -99,7 +97,6 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/textView3"
-            android:layout_alignRight="@+id/textView3"
             android:layout_below="@+id/textView3"
             android:layout_marginTop="20dp"
             android:background="@drawable/round_corner"
@@ -108,9 +105,7 @@
             android:focusable="true"
             android:hint="@string/Login"
             android:textColorHint="@color/colorWhite"
-            android:textSize="15sp"
-            tools:targetApi="lollipop"
-            tools:ignore="UnusedAttribute" />
+            android:textSize="15sp" />
 
 
         <TextView

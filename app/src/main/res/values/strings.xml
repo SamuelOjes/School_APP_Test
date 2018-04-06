@@ -8,5 +8,10 @@
     <string name="remember">Remember me</string>
     <string name="forgot">Forgot Password?</string>
     <string name="no_account">Don\'t have an account?</string>
+    <string name="forgotPassText">We will send you link to reset your \n password. But, if you don\'t take the \n link. Your password would still be \n the old password. </string>
     <string name="passFor">FORGOT</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="reset">RESET MY PASSWORD</string>
+    <string name="back_to_sign_in">BACK TO SIGN IN</string>
 </resources>

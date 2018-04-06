@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#f52c73</color>
     <color name="colorWhite">#ffffff</color>
-    <color name="colorBlack">#403f3f</color>
+    <color name="colorBlack">#eceff1</color>
+    <color name="colorText1">#414040</color>
+    <color name="colorText2">#f1f4f8</color>
     <color name="colorView">@android:color/holo_orange_dark</color>
 </resources>
