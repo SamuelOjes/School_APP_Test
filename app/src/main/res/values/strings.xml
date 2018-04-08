@@ -14,4 +14,11 @@
     <string name="email_address">Email Address</string>
     <string name="reset">RESET MY PASSWORD</string>
     <string name="back_to_sign_in">BACK TO SIGN IN</string>
+    <string name="sign_up_with_e_mail">Sign up with E-mail</string>
+    <string name="first_name">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="password2">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="e_mail_address">E-mail Address</string>
+    <string name="submit">Submit</string>
 </resources>
