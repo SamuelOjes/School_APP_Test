@@ -9,4 +9,5 @@
     <color name="colorText2">#f1f4f8</color>
     <color name="colorView">@android:color/holo_orange_dark</color>
     <color name="colorReg">#302f59</color>
+    <color name="textcolor">#37474f</color>
 </resources>

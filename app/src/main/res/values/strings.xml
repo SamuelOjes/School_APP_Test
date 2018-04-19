@@ -8,7 +8,7 @@
     <string name="remember">Remember me</string>
     <string name="forgot">Forgot Password?</string>
     <string name="no_account">Don\'t have an account?</string>
-    <string name="forgotPassText">A link to reset your password will be sent to your E-mail. But, if you don\'t take the link.\nYour password would still be the old password. </string>
+    <string name="forgotPassText">A link to reset your password will be sent to your E-mail. But, if you don\'t take the link. Your password would still be the old password. </string>
     <string name="passFor">FORGOT</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="email_address">Email Address</string>
@@ -21,4 +21,7 @@
     <string name="user_name">User Name</string>
     <string name="e_mail_address">E-mail Address</string>
     <string name="submit">Submit</string>
+    <string-array name="kevo">
+        <item>samuel</item>
+    </string-array>
 </resources>

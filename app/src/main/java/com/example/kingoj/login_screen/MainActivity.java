@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     /** Called when the user taps the Sign UP button */
     public void signUP(View view) {
         // Do something in response to button
-        Intent intent = new Intent(this, SignUpActivity.class);
+        Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
         startActivity(intent);
     }
 

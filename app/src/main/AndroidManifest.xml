@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.kingoj.login_screen">
 
     <application
@@ -13,7 +14,7 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
-            android:configChanges="keyboardHidden">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +26,8 @@
             android:name=".SignUpActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:label="@string/Sign_up">
+            android:label="@string/Sign_up"
+            tools:targetApi="jelly_bean">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -36,7 +38,8 @@
         <activity android:name=".ForGotPasswordActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:label="@string/passFor">
+            android:label="@string/passFor"
+            tools:targetApi="jelly_bean">
 
         </activity>
     </application>

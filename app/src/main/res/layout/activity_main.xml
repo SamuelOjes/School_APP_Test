@@ -7,25 +7,6 @@
     android:background="@drawable/background_gradient"
     >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
-        android:src="@drawable/ic_email_black"
-        android:contentDescription="@string/code_logo"
-        android:scaleType="center"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginTop="53dp">
-
         <EditText
             android:id="@+id/editText"
             android:layout_width="300dp"
@@ -41,6 +22,7 @@
             android:ems="10"
             android:hint="@string/username"
             android:inputType="number"
+            android:maxLength="9"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             android:textColor="@color/colorWhite"
             android:textColorHint="@color/colorWhite"
@@ -70,6 +52,8 @@
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
+            android:maxLength="9"
+            android:minLines="4"
             android:textColor="@color/colorWhite"
             android:textColorHint="@color/colorWhite"
             android:textSize="20sp" />
@@ -143,4 +127,3 @@
 
     </RelativeLayout>
 
-</RelativeLayout>
